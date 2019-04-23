@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-2">
+
+    <h1>Login</h1>
+   
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" placeholder="Digite  Seu E-mail:" formControlName="email" id="email">
+        <div *ngIf="submetido && loginForm.controls.email.errors" class="error">
+          <div *ngIf="loginForm.controls.email.errors.required">Informe E-mail</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+
+        <input type="password" class="form-control" placeholder="Digite Sua Senha:" formControlName="senha" id="senha">
+        <div *ngIf="submetido && loginForm.controls.senha.errors" class="error">
+          <div *ngIf="loginForm.controls.senha.errors">Informe Senha</div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-lg">Logar</button>
+      <div *ngIf="loginInvalido" class="error">
+        <div>Acesso Negado</div>
+      </div>
+    </form>
+
+  </div>
+</div>

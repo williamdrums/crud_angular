@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h2 class="text-center">Cadastrar Usuario</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" formControlName="email" placeholder="Informe E-mail:" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input formControlName="nome" placeholder="Informe seu Nome:" name="nome" class="form-control" id="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="sobrenome">Sobrenome:</label>
+      <input formControlName="sobrenome" placeholder="Informe seu Sobrenome:" name="sobrenome" class="form-control" id="sobrenome">
+    </div>
+
+    <button class="btn btn-success">Adicionar</button>
+  </form>
+
+</div>

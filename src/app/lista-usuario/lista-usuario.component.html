@@ -1,0 +1,29 @@
+<div class="col-md-6">
+  <h2 class="text-center">Detalhes Usuarios</h2>
+  <button class="btn btn-primary" (click)="adicionarUsuario()">Adicionar Usuario</button>
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>E-mail</th>
+        <th>Opção</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usu of usuarios">
+        <td>{{usu.id}}</td>
+        <td>{{usu.nome}}</td>
+        <td>{{usu.sobrenome}}</td>
+        <td>{{usu.email}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deletarUsuario(usu)" style="margin-left: 20px;">Excluir</button><br><br>
+          <button class="btn btn-success" (click)="editarUsuario(usu)" style="margin-left: 20px;">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

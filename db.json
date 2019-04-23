@@ -1,0 +1,34 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "williandrums@gmail.com",
+      "nome": "William",
+      "sobrenome": "Lúcio do Nascimento"
+    },
+    {
+      "id": 2,
+      "email": "pietronascimento@gmail.com",
+      "nome": "Pietro",
+      "sobrenome": "Galli Nascimennto"
+    },
+    {
+      "id": 4,
+      "email": "sssss",
+      "nome": "sssss",
+      "sobrenome": "sssssss"
+    },
+    {
+      "id": 6,
+      "email": "summer",
+      "nome": "drums",
+      "sobrenome": "drummer"
+    },
+    {
+      "id": 7,
+      "email": "verydiana@hotmail.com",
+      "nome": "cvvv",
+      "sobrenome": "vvvv"
+    }
+  ]
+}
